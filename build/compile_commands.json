@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/sasanka/ChargedUpCv/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ChargedUpCv.dir/main.cpp.o -c /home/sasanka/ChargedUpCv/main.cpp",
+  "file": "/home/sasanka/ChargedUpCv/main.cpp"
+}
+]
