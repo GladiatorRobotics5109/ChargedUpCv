@@ -8,7 +8,13 @@
 // wrapper for libInterp 1D linear interpolation
 double ChargedUpCv::Utils::Lerp(std::vector<double> x, std::vector<double> y, double xVal)
 {
-    _1D::LinearInterpolator<double> lerp;
+    _1D::LinearInterpolator<double> lerp; // is creating this object slow??
     lerp.setData(x, y);
-    double result = lerp(xVal);
+    return lerp(xVal);
+}
+
+
+Eigen::Vector2d ChargedUpCv::Utils::TransposeCenter(double x, double y, double width, double height)
+{
+    return Eigen::Vector2d(x - sqrt(width), -y + sqrt(height));
 }
