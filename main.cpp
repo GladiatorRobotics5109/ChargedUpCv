@@ -33,7 +33,7 @@ int main()
     std::vector<double> x = { 0.0, 1.0, 2.0, 3.0, 4.0 };
     std::vector<double> y = { 0.0, 5.0, 10.0, 15.0, 20.0 };
 
-    double result = Utils::Lerp(x, y, 2.5);
+    double result = Utils::Math::Lerp(x, y, 2.5);
 
     std::cout << "Lerp Result: " << result << std::endl;
 
