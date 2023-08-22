@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/aarch64-linux-gnu-g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -isystem /usr/local/include/opencv4 -isystem /usr/local/boost_1_82_0 -isystem /usr/local/eigen-3.4.0
 
-CXX_FLAGS = -g
+CXX_FLAGS = -g -std=gnu++17
 

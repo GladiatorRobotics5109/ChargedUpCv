@@ -2,5 +2,5 @@
 #include <opencv2/opencv.hpp>
 
 namespace ChargedUpCv::Vision {
-    void detectCones(cv::Mat frame);
+    void DetectCones(cv::Mat frame);
 }

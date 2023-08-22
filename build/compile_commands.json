@@ -1,7 +1,12 @@
 [
 {
   "directory": "/home/sasanka/ChargedUpCv/build",
-  "command": "/usr/bin/aarch64-linux-gnu-g++  -isystem /usr/local/include/opencv4 -g -o CMakeFiles/ChargedUpCv.dir/main.cpp.o -c /home/sasanka/ChargedUpCv/main.cpp",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -isystem /usr/local/include/opencv4 -isystem /usr/local/boost_1_82_0 -isystem /usr/local/eigen-3.4.0 -g -std=gnu++17 -o CMakeFiles/ChargedUpCv.dir/main.cpp.o -c /home/sasanka/ChargedUpCv/main.cpp",
   "file": "/home/sasanka/ChargedUpCv/main.cpp"
+},
+{
+  "directory": "/home/sasanka/ChargedUpCv/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -isystem /usr/local/include/opencv4 -isystem /usr/local/boost_1_82_0 -isystem /usr/local/eigen-3.4.0 -g -std=gnu++17 -o CMakeFiles/ChargedUpCv.dir/Utils/Utils.cpp.o -c /home/sasanka/ChargedUpCv/Utils/Utils.cpp",
+  "file": "/home/sasanka/ChargedUpCv/Utils/Utils.cpp"
 }
 ]
