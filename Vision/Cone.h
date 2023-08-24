@@ -1,6 +1,10 @@
 #pragma once
-#include <opencv2/opencv.hpp>
 
-namespace ChargedUpCv::Vision {
-    void DetectCones(cv::Mat frame);
+#include <opencv2/opencv.hpp>
+#include <Eigen/Dense>
+    
+
+namespace ChargedUpCv::Vision 
+{
+    Eigen::Vector3d DetectCones(cv::Mat frame);
 }

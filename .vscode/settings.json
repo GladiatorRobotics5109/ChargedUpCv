@@ -1,5 +1,5 @@
 {
-    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.errorSquiggles": "disabled",
     "cmake.configureOnOpen": false,
     "files.associations": {
         "*.out": "plaintext",
@@ -62,6 +62,7 @@
         "streambuf": "cpp",
         "thread": "cpp",
         "cinttypes": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "*.ipp": "cpp"
     }
 }

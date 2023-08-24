@@ -4,11 +4,12 @@
 
 
 #include <opencv2/opencv.hpp>
+#include <Eigen/Dense>
 
 
-// #include "Vision/Cube.h"
-// #include "Vision/Cone.h"
-// #include "Vision/AprilTag.h"
+#include "Vision/Cube.h"
+#include "Vision/Cone.h"
+#include "Vision/AprilTag.h"
 
 #include "Utils/Utils.h"
 
@@ -17,25 +18,28 @@ using namespace ChargedUpCv;
 int main()
 {
     
-    // cv::VideoCapture cap(0);
-    // cv::Mat frame;
+    cv::VideoCapture cap(0);
+    cv::Mat frame;
     
-    /*while (true) {
+    while (true) {
         cap.read(frame);
 
-        //Vision::DetectCubes(frame);
-        std::vector<double> dat = {0.0, 100.0};
-        //double result = ChargedUpCv::Utils::Lerp(dat, 0.5);
-        std::cout << "Lerp Result: " << std::endl;
+        std::vector<Eigen::Vector3d> conePoses = Vision::DetectCones(frame);
+        std::cout << "CONES:" << std::endl;
+        for (int i = 0; i < conePoses.size(); i++)
+        {
+            Eigen::Vector3d pos = conePoses[i];
+            std::cout << "    Cone " << i << ": (" << pos.x << ", " << pos.y << ", " << pos.z << ")" << std::endl;
+        }
 
-    }*/
-
-    std::vector<double> x = { 0.0, 1.0, 2.0, 3.0, 4.0 };
-    std::vector<double> y = { 0.0, 5.0, 10.0, 15.0, 20.0 };
-
-    double result = Utils::Math::Lerp(x, y, 2.5);
-
-    std::cout << "Lerp Result: " << result << std::endl;
+        std::vector<Eigen::Vector3d> cubePoses = Vision::DetectCubes(frame);
+        std::cout << "CUBES:" << std::endl;
+        for (int i = 0; i < cubePoses.size(); i++)
+        {
+            Eigen::Vector3d pos = cubePoses[i];
+            std::cout << "    Cube " << i << ": (" << pos.x << ", " << pos.y << ", " << pos.z << ")" << std::endl;
+        }
+    }
 
     return 0;
 }

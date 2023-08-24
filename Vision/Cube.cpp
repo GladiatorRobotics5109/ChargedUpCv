@@ -1,6 +1,11 @@
 #include "Cube.h"
 
+#include "../Utils/Utils.h"
+#include "../Utils/Constants.h"
 
-void ChargedUpCv::Vision::detectCubes(cv::Mat frame) {
-    
+using namespace ChargedUpCv;
+
+std::vector<Eigen::Vector3d> ChargedUpCv::Vision::detectCubes(cv::Mat frame) 
+{
+    return std::vector<Eigen::Vector3d>();
 }

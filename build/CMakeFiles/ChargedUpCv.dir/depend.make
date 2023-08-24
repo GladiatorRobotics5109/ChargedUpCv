@@ -246,6 +246,9 @@ CMakeFiles/ChargedUpCv.dir/Utils/Utils.cpp.o: /usr/local/eigen-3.4.0/Eigen/src/p
 CMakeFiles/ChargedUpCv.dir/Utils/Utils.cpp.o: /usr/local/eigen-3.4.0/Eigen/src/plugins/ReshapedMethods.h
 
 CMakeFiles/ChargedUpCv.dir/main.cpp.o: ../Utils/Utils.h
+CMakeFiles/ChargedUpCv.dir/main.cpp.o: ../Vision/AprilTag.h
+CMakeFiles/ChargedUpCv.dir/main.cpp.o: ../Vision/Cone.h
+CMakeFiles/ChargedUpCv.dir/main.cpp.o: ../Vision/Cube.h
 CMakeFiles/ChargedUpCv.dir/main.cpp.o: ../main.cpp
 CMakeFiles/ChargedUpCv.dir/main.cpp.o: /usr/local/boost_1_82_0/boost/assert.hpp
 CMakeFiles/ChargedUpCv.dir/main.cpp.o: /usr/local/boost_1_82_0/boost/assert/source_location.hpp

@@ -1,6 +1,11 @@
 #pragma once
-#include <opencv2/opencv.hpp>
 
-namespace ChargedUpCv::Vision {
-    void DetectCubes(cv::Mat frame);
+#include <opencv2/opencv.hpp>
+#include <Eigen/Dense>
+
+#include <vector>
+
+namespace ChargedUpCv::Vision 
+{
+    std::vector<Eigen::Vector3d> DetectCubes(cv::Mat frame);
 }

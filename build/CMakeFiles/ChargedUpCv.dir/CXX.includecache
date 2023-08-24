@@ -6,20 +6,30 @@
 
 #IncludeRegexTransform: 
 
-/home/sasanka/ChargedUpCv/Utils/Utils.cpp
-Utils.h
-/home/sasanka/ChargedUpCv/Utils/Utils.h
-iostream
--
-cmath
--
-libInterpolate/Interpolate.hpp
--
-
 /home/sasanka/ChargedUpCv/Utils/Utils.h
 vector
 -
 Eigen/Dense
+-
+libInterpolate/Interpolate.hpp
+-
+
+/home/sasanka/ChargedUpCv/Vision/AprilTag.h
+opencv2/opencv.hpp
+-
+
+/home/sasanka/ChargedUpCv/Vision/Cone.h
+opencv2/opencv.hpp
+-
+Eigen/Dense
+-
+
+/home/sasanka/ChargedUpCv/Vision/Cube.h
+opencv2/opencv.hpp
+-
+Eigen/Dense
+-
+vector
 -
 
 /home/sasanka/ChargedUpCv/main.cpp
@@ -31,6 +41,14 @@ string
 -
 opencv2/opencv.hpp
 -
+Eigen/Dense
+-
+Vision/Cube.h
+/home/sasanka/ChargedUpCv/Vision/Cube.h
+Vision/Cone.h
+/home/sasanka/ChargedUpCv/Vision/Cone.h
+Vision/AprilTag.h
+/home/sasanka/ChargedUpCv/Vision/AprilTag.h
 Utils/Utils.h
 /home/sasanka/ChargedUpCv/Utils/Utils.h
 
